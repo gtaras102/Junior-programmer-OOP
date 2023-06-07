@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuUIHandler : MonoBehaviour
 {
-    
     public void SceneLoader()
     {
         SceneManager.LoadScene(2);
@@ -25,5 +25,4 @@ public class MenuUIHandler : MonoBehaviour
         Application.Quit();
 #endif
     }
-
 }
