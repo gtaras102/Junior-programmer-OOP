@@ -6,7 +6,7 @@ using TMPro;
 public class MainManager : MonoBehaviour
 {
     #region Singleton
-    public static MainManager instance;
+    public static MainManager instance { get; private set; }
 
     private void Awake()
     {
