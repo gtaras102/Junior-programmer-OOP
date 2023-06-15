@@ -1,2 +1,2 @@
 # Junior programmer OOP
- THis is a final submission in Junior programmer mission - Apply OOP
+ This is a final submission in Junior programmer pathway Unity3d  - Apply OOP
