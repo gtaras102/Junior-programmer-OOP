@@ -6,7 +6,7 @@ using TMPro;
 public class MainManager : MonoBehaviour
 {
     #region Singleton
-    public static MainManager instance { get; private set; }
+    public static MainManager instance { get; private set; }  // ENCAPSULATION
 
     private void Awake()
     {
@@ -21,7 +21,7 @@ public class MainManager : MonoBehaviour
     }
     #endregion
 
-    public string playerName;
+    public string playerName = null;
 
     public void SetPlayerName(string inputField)
     {

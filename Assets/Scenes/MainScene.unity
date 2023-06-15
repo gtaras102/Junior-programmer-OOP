@@ -193,11 +193,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1031655310068371762, guid: c27b198a15877904492f52150cc6baeb, type: 3}
   m_PrefabInstance: {fileID: 17572850}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &17572855 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 1031655310068371764, guid: c27b198a15877904492f52150cc6baeb, type: 3}
-  m_PrefabInstance: {fileID: 17572850}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &17572858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +207,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpForce: 10
-  color: {fileID: 17572855}
   scaleChange: {fileID: 17572851}
 --- !u!1 &35242991
 GameObject:
@@ -2194,7 +2188,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "               STANDART BALL \n\nThis  is the ball with standart functionallity.
     Additionally to the basic ball functionallity it can change color (button C)
-    and change size. \n\nTo move the ball press arrow buttons on the keyboard.\n\nTo
+    and change size (button X). \n\nTo move the ball press arrow buttons on the keyboard.\n\nTo
     jump press space bar.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2636,7 +2630,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1271471910
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3550,8 +3544,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "              ADVANCED BALL \n\nThis  is a ball with advanced functionallity
-    can do DOUBLE JUMP and SHOOT projectiles. \n\nTo move the ball press arrow buttons
-    on the keyboard.\n\nTo jump press space bar.\n"
+    can do DOUBLE JUMP and SHOOT projectiles (button R). \n\nTo move the ball press
+    arrow buttons on the keyboard.\n\nTo jump press space bar.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

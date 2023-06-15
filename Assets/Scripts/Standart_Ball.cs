@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Standart_Ball : Ball
+public class Standart_Ball : Ball // INHERITANCE
 {     
-    public Renderer color;
     public GameObject scaleChange;
+    private Renderer _color;
+    
+    private float _minScale = 0.5f;
+    private float _maxScale = 1.5f;
 
     private void Start()
     {
-        color = GetComponent<Renderer>();
-        
+        _color = GetComponent<Renderer>();     
     }
 
     private void Update()
@@ -24,7 +26,9 @@ public class Standart_Ball : Ball
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            color.material.color = Color.green;
+            _color.material.color = new Color (Random.Range(0f, 1f), 
+                                              Random.Range(0f, 1f), 
+                                              Random.Range(0f, 1f));
         }
     }
 
@@ -32,7 +36,7 @@ public class Standart_Ball : Ball
     {
         if (Input.GetKeyDown(KeyCode.X))
         {
-            scaleChange.transform.localScale = new Vector3(5f, 5f, 5f);
+            scaleChange.transform.localScale *= Random.Range(_minScale, _maxScale);
         }
     }
 

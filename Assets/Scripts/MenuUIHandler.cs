@@ -7,9 +7,11 @@ using UnityEngine.UI;
 
 public class MenuUIHandler : MonoBehaviour
 {
+
+
     public void SceneLoader()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(2);       
     }
 
     public void BackToMainMenu()

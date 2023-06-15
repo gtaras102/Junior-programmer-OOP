@@ -5,12 +5,10 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     public int speed = 10;
-    private bool isJumping = false;
     public float jumpForce = 10f;
 
-       
+    private bool isJumping = false;
     
-
     public void Move()
     {
         float horizontalInput = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
@@ -26,10 +24,7 @@ public class Ball : MonoBehaviour
             GetComponent<Rigidbody>().AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isJumping = true;
         }
-        else
-        {
-            isJumping = false; 
-        }
+       
     }
     private void OnCollisionEnter(Collision collision)
     {

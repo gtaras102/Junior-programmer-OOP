@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AdvancedBall : Ball
+public class AdvancedBall : Ball // INHERITANCE
 {
     public Rigidbody progectile;
     public Transform spawnPoint;
 
-    private int pSpeed = 100;
+    private int projectileSpeed = 100;
 
     public bool canDoubleJump = false;
     public bool isJumping = false;
@@ -52,7 +52,7 @@ public class AdvancedBall : Ball
         {
             
             Rigidbody rb = Instantiate(progectile, spawnPoint.position, spawnPoint.rotation);
-            rb.velocity = transform.transform.forward * pSpeed;
+            rb.velocity = transform.transform.forward * projectileSpeed;
         }
     }
 }
